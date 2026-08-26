@@ -1,8 +1,10 @@
+<p align="center">
+  <img src="Resources/AppIcon.png" alt="macOS Mic Priority app icon" width="160">
+</p>
+
 # macOS Mic Priority
 
 macOS Mic Priority is a small native menu-bar app that keeps the microphone you prefer as the system default. When AirPods, headphones, displays, docks, or other audio devices connect and macOS changes the input, macOS Mic Priority restores the highest-ranked microphone that is currently available.
-
-![macOS Mic Priority app icon](Resources/AppIcon.png)
 
 ## Features
 
@@ -31,6 +33,8 @@ The initial community build is ad-hoc signed because this project does not yet h
 ## How it works
 
 macOS Mic Priority uses the public Core Audio Hardware API. It listens for changes to the connected audio-device list and the system default input device. After a short debounce, it chooses the first connected device in your saved priority order and sets that device as the default input. Selection is verified and retried up to three times.
+
+Powering off, unplugging, or otherwise disconnecting a microphone makes it unavailable, so the app automatically selects the next connected device in the priority list. A hardware mute button that leaves the microphone connected does not trigger a switch because Core Audio still reports that device as available.
 
 On first launch, the current macOS input is automatically added as the initial preferred microphone, so installing the app does not unexpectedly select another device.
 
