@@ -1,0 +1,22 @@
+.DS_Store
+node_modules/
+.env
+*.log
+
+# Local reverse-engineering references from the original app. Never publish.
+.local-reference/
+
+# Swift and release build output.
+.build/
+.build-*/
+build/
+dist/
+*.dSYM/
+*.xcarchive/
+
+# Signing/notarization material must never enter source control.
+*.p12
+*.cer
+*.provisionprofile
+*.mobileprovision
+notarytool-profile.json
