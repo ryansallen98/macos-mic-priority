@@ -14,4 +14,4 @@ swiftc \
 "$PROJECT_DIR/.build/tests/PriorityPolicyTests"
 "$PROJECT_DIR/scripts/build.sh"
 plutil -lint "$PROJECT_DIR/Resources/Info.plist" "$PROJECT_DIR/Resources/PrivacyInfo.xcprivacy"
-codesign --verify --deep --strict --verbose=2 "$PROJECT_DIR/build/macOS Mic Priority.app"
+codesign --verify --deep --strict --verbose=2 "$PROJECT_DIR/build/Mic Priority.app"

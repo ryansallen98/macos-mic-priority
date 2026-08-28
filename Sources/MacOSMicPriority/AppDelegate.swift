@@ -23,9 +23,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
     guard let button = statusItem.button else { return }
     button.image = NSImage(
-      systemSymbolName: "mic.fill", accessibilityDescription: "macOS Mic Priority")
+      systemSymbolName: "mic.fill", accessibilityDescription: "Mic Priority")
     button.image?.isTemplate = true
-    button.toolTip = "macOS Mic Priority"
+    button.toolTip = "Mic Priority"
     button.target = self
     button.action = #selector(togglePopover)
   }
@@ -76,7 +76,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
       backing: .buffered,
       defer: false
     )
-    panel.title = "macOS Mic Priority"
+    panel.title = "Mic Priority"
     panel.titleVisibility = .hidden
     panel.titlebarAppearsTransparent = true
     panel.isFloatingPanel = true

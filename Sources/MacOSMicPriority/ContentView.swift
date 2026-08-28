@@ -39,7 +39,7 @@ struct ContentView: View {
         .foregroundStyle(model.isEnabled ? .green : .secondary)
         .frame(width: 34)
       VStack(alignment: .leading, spacing: 2) {
-        Text("macOS Mic Priority")
+        Text("Mic Priority")
           .font(.headline)
         Text(model.statusText)
           .font(.caption)

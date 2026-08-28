@@ -1,6 +1,13 @@
 # Changelog
 
-All notable changes to macOS Mic Priority are documented here.
+All notable changes to Mic Priority are documented here.
+
+## [1.0.1] - 2026-08-28
+
+### Changed
+
+- Rename the installed bundle to `Mic Priority.app`
+- Replace the application artwork with a simpler native-style icon
 
 ## [1.0.0] - 2026-08-26
 

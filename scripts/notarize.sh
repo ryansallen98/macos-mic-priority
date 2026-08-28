@@ -2,7 +2,7 @@
 set -euo pipefail
 
 PROJECT_DIR="${0:A:h:h}"
-APP_PATH="$PROJECT_DIR/build/macOS Mic Priority.app"
+APP_PATH="$PROJECT_DIR/build/Mic Priority.app"
 NOTARY_PROFILE="${NOTARY_PROFILE:-}"
 
 if [[ -z "$NOTARY_PROFILE" ]]; then
@@ -17,7 +17,7 @@ fi
 
 TEMP_DIR="$(mktemp -d)"
 trap 'rm -rf "$TEMP_DIR"' EXIT
-SUBMISSION_ZIP="$TEMP_DIR/macOS-Mic-Priority-notarization.zip"
+SUBMISSION_ZIP="$TEMP_DIR/Mic-Priority-notarization.zip"
 
 ditto -c -k --sequesterRsrc --keepParent "$APP_PATH" "$SUBMISSION_ZIP"
 xcrun notarytool submit "$SUBMISSION_ZIP" --keychain-profile "$NOTARY_PROFILE" --wait

@@ -1,6 +1,6 @@
-# macOS Mic Priority 1.0.0
+# Mic Priority 1.0.1
 
-The first public release of macOS Mic Priority, a native menu-bar utility that prevents newly connected headphones and other audio devices from taking over the default microphone.
+This update gives Mic Priority a concise Applications name and a simpler native-style icon while preserving its existing microphone protection behavior.
 
 ## Highlights
 

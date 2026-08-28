@@ -10,4 +10,4 @@ Please report a vulnerability privately to `ryan@rallen.dev`. Do not include pas
 
 ## Security design
 
-macOS Mic Priority uses public macOS frameworks, does not run with elevated privileges, does not record audio, and has no network client or server. Release artifacts include a SHA-256 checksum. Public binaries should be Developer ID signed and notarized when signing infrastructure is available.
+Mic Priority uses public macOS frameworks, does not run with elevated privileges, does not record audio, and has no network client or server. Release artifacts include a SHA-256 checksum. Public binaries should be Developer ID signed and notarized when signing infrastructure is available.

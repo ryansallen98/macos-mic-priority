@@ -4,7 +4,7 @@ set -euo pipefail
 PROJECT_DIR="${0:A:h:h}"
 VERSION="$(tr -d '[:space:]' < "$PROJECT_DIR/VERSION")"
 BUILD_DIR="$PROJECT_DIR/build"
-APP_DIR="$BUILD_DIR/macOS Mic Priority.app"
+APP_DIR="$BUILD_DIR/Mic Priority.app"
 CONTENTS_DIR="$APP_DIR/Contents"
 ICON_SOURCE="$PROJECT_DIR/Resources/AppIcon.png"
 ICONSET_DIR="$BUILD_DIR/AppIcon.iconset"

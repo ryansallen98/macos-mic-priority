@@ -12,7 +12,7 @@ swiftc \
     -o "$HARNESS"
 
 if ! pgrep -x MacOSMicPriority >/dev/null; then
-    echo "Install and launch macOS Mic Priority before running this test." >&2
+    echo "Install and launch Mic Priority before running this test." >&2
     exit 2
 fi
 
@@ -36,7 +36,7 @@ trap restore_original EXIT
 for _ in {1..30}; do
     if [[ "$($HARNESS current-uid)" == "$original_uid" ]]; then
         trap - EXIT
-        echo "Passed: macOS Mic Priority restored the preferred microphone after $alternate_name took over."
+        echo "Passed: Mic Priority restored the preferred microphone after $alternate_name took over."
         exit 0
     fi
     sleep 0.1

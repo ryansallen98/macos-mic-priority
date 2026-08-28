@@ -1,6 +1,6 @@
 # Privacy
 
-macOS Mic Priority is intentionally local and minimal.
+Mic Priority is intentionally local and minimal.
 
 ## Data the app accesses
 

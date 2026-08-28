@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping improve macOS Mic Priority.
+Thanks for helping improve Mic Priority.
 
 1. Open an issue describing the behavior or proposed change.
 2. Keep changes focused and use public macOS APIs.
